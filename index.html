@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><b>SURVEY FORM</b></h1>
+    <h2>RUN CEDS NEWSLETTER SURVEY</h2>
+    <h3><strong>Personal Information</strong></h3>
+    <form action="https://formspree.io/f/mwkgdypa" method="post">
+      <div class="line-one">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" />
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="Gender" />
+      </div>
+
+      <div class="line-two">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="Address" />
+
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="Phone" />
+      </div>
+
+      <div class="line-three">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="Email" />
+      </div>
+
+      <h2>Newsletter Preferences</h2>
+      <label>Would you be interested in receiving a school newsletter?</label>
+      <label>
+        <input type="radio" name="NewsletterInterest" value="Yes" />
+        Yes
+      </label>
+      <label>
+        <input type="radio" name="NewsletterInterest" value="No" />
+        No
+      </label>
+      <br />
+
+      <label>Would you be interested in contributing to the newsletter?</label>
+      <label>
+        <input type="radio" name="ContributeInterest" value="Yes" />
+        Yes
+      </label>
+      <label>
+        <input type="radio" name="ContributeInterest" value="No" />
+        No
+      </label>
+      <br />
+
+      <label>If yes, in what capacity would you like to contribute?</label>
+      <label>
+        <input
+          type="checkbox"
+          name="ContributionCapacity"
+          value="Writing articles"
+        />
+        Writing articles
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          name="ContributionCapacity"
+          value="Taking photographs"
+        />
+        Taking photographs
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          name="ContributionCapacity"
+          value="Creating artwork"
+        />
+        Creating artwork
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          name="ContributionCapacity"
+          value="Designing layout"
+        />
+        Designing layout
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          name="ContributionCapacity"
+          value="Editing content"
+        />
+        Editing content
+      </label>
+      <label>
+        <input type="checkbox" name="ContributionCapacity" value="Other" />
+        Other (please specify)
+        <input type="text" name="OtherContributionCapacity" />
+      </label>
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
